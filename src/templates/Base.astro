@@ -13,6 +13,7 @@ export interface Props {
 const {
   head: { title, description },
 } = Astro.props as Props;
+const Css = Astro.site + '/global.css'
 ---
 
 <html lang='en'>
@@ -24,21 +25,21 @@ const {
     <meta name='author' content={AppConfig.author} />
 
     <link rel='alternate' type='application/rss+xml' href='/rss.xml' />
-    <link rel='icon' type='image/x-icon' href='/favicon.ico' />
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel='icon' type='image/x-icon' href='/portfolio/favicon.ico' />
+    <link rel="stylesheet" type="text/css" href={Css} />
   </head>
   <body class='bg-slate-900 text-gray-100'>
     <Section>
       <div class='flex justify-end gap-2'>
         <a href="https://github.com/ramirospinelli">
-          <HeroSocial src="/src/assets/images/github.png" alt="Github icon" />
+          <HeroSocial src="/portfolio/assets/images/github.png" alt="Github icon" />
         </a>
         <a href="https://www.linkedin.com/in/ramiro-spinelli/">
-          <HeroSocial src="/src/assets/images/linkedin.png" alt="Linkedin icon" />
+          <HeroSocial src="/portfolio/assets/images/linkedin.png" alt="Linkedin icon" />
         </a>
         <a href="https://www.instagram.com/ramirospinelli">
           <HeroSocial
-            src="/src/assets/images/instagram.png"
+            src="/portfolio/assets/images/instagram.png"
             alt="Instagram icon"
           />
         </a>

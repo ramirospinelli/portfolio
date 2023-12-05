@@ -27,14 +27,14 @@ const Hero = () => (
       avatar={
         <img
           className="h-80 w-64"
-          src="/src/assets/images/avatar.svg"
+          src="/portfolio/assets/images/avatar.svg"
           alt="Avatar image"
           loading="lazy"
         />
       }
       socialButtons={
         <a
-          href="/src/assets/resume.pdf"
+          href="/portfolio/assets/resume.pdf"
           download="Ramiro Spinelli - Resume"
           className="inline-block"
         >
