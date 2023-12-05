@@ -21,7 +21,7 @@ const CompaniesList = () => (
         date="OCT 2023 - PRESENT"
         link="/"
         img={{
-          src: '/assets/images/kodaris.png',
+          src: '/src/assets/images/kodaris.png',
           alt: 'Project Web Design',
         }}
         category={
@@ -43,7 +43,7 @@ const CompaniesList = () => (
         hendrerit dui odio id enim."
         date="AUG 2017 - JUN 2021 / MAR 2022 - NOV 2023"
         link="/"
-        img={{ src: '/assets/images/sovos.png', alt: 'Project Fire' }}
+        img={{ src: '/src/assets/images/sovos.png', alt: 'Project Fire' }}
         category={
           <>
             <Tags color={ColorTags.BLUE}>JAVA</Tags>
@@ -63,7 +63,7 @@ const CompaniesList = () => (
         hendrerit dui odio id enim."
         date="AUG 2020 - JUL 2022"
         link="/"
-        img={{ src: '/assets/images/axioma.png', alt: 'Project Maps' }}
+        img={{ src: '/src/assets/images/axioma.png', alt: 'Project Maps' }}
         category={
           <>
             <Tags color={ColorTags.SKY}>React JS</Tags>
@@ -83,7 +83,7 @@ const CompaniesList = () => (
         hendrerit dui odio id enim."
         date="JUN 2021 - FEB 2022"
         link="/"
-        img={{ src: '/assets/images/leniolabs.png', alt: 'Project Maps' }}
+        img={{ src: '/src/assets/images/leniolabs.png', alt: 'Project Maps' }}
         category={
           <>
             <Tags color={ColorTags.SKY}>React.JS</Tags>
@@ -101,7 +101,10 @@ const CompaniesList = () => (
         hendrerit dui odio id enim."
         date="SEPT 2020 - OCT 2021"
         link="/"
-        img={{ src: '/assets/images/globallearning.png', alt: 'Project Maps' }}
+        img={{
+          src: '/src/assets/images/globallearning.png',
+          alt: 'Project Maps',
+        }}
         category={
           <>
             <Tags color={ColorTags.SKY}>React JS</Tags>
