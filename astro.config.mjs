@@ -7,10 +7,7 @@ import { astroImageTools } from 'astro-imagetools';
 
 // https://astro.build/config
 export default defineConfig({
-  // base: '.', // Set a path prefix.
-  buildOptions: {
-    site: 'https://ramirospinelli.github.io',
-  },
+  site: 'https://ramirospinelli.github.io',
   base: '/portfolio',
   trailingSlash: 'always', // Use to always append '/' at end of url
   markdown: {
