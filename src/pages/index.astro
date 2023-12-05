@@ -1,4 +1,5 @@
 ---
+import Contact from '@/partials/Contact';
 import { CompaniesList } from '../partials/CompaniesList';
 import { Hero } from '../partials/Hero';
 import Base from '../templates/Base.astro';
@@ -11,4 +12,5 @@ const { description } = AppConfig;
 <Base head={{ title, description }}>
   <Hero />
   <CompaniesList />
+  <Contact />
 </Base>

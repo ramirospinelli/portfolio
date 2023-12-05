@@ -1,6 +1,5 @@
 import { GradientText } from '../shared/Gradient';
 import { HeroAvatar } from '../shared/HeroAvatar';
-import { HeroSocial } from '../shared/HeroSocial';
 import { Section } from '../shared/Section';
 
 const Hero = () => (
@@ -34,20 +33,15 @@ const Hero = () => (
         />
       }
       socialButtons={
-        <>
-          <a href="https://github.com/ramirospinelli">
-            <HeroSocial src="/assets/images/github.png" alt="Github icon" />
-          </a>
-          <a href="https://www.linkedin.com/in/ramiro-spinelli/">
-            <HeroSocial src="/assets/images/linkedin.png" alt="Linkedin icon" />
-          </a>
-          <a href="https://www.instagram.com/ramirospinelli">
-            <HeroSocial
-              src="/assets/images/instagram.png"
-              alt="Instagram icon"
-            />
-          </a>
-        </>
+        <a
+          href="/assets/resume.pdf"
+          download="Ramiro Spinelli - Resume"
+          className="inline-block"
+        >
+          <button className="h-8 rounded  bg-sky-500 px-4 font-bold text-white hover:bg-cyan-400">
+            Download CV
+          </button>
+        </a>
       }
     />
   </Section>

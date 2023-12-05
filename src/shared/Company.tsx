@@ -10,6 +10,7 @@ type ICompanyProps = {
   link: string;
   category: ReactNode;
   date: string;
+  role: string;
 };
 
 const Company = (props: ICompanyProps) => (
@@ -26,14 +27,16 @@ const Company = (props: ICompanyProps) => (
     </div>
 
     <div>
-      <div className="flex flex-col items-center gap-y-2 md:flex-row">
+      <div className="flex flex-col items-start gap-y-2 md:flex-col ">
         <a className="hover:text-cyan-400" href={props.link}>
-          <div className="text-xl font-semibold">{props.name}</div>
+          <div className="text-xl font-semibold">
+            {props.name}, {props.role}
+          </div>
         </a>
 
-        <div className="ml-3 flex flex-wrap gap-2">{props.category}</div>
+        <div className="flex flex-wrap gap-2">{props.category}</div>
       </div>
-      <p className="text-xs">{props.date}</p>
+      <p className="my-2 text-xs">{props.date}</p>
       <p className="mt-3 text-gray-400">{props.description}</p>
     </div>
   </div>

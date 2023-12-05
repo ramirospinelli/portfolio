@@ -1,5 +1,7 @@
 ---
+import { HeroSocial } from '@/shared/HeroSocial';
 import { AppConfig } from '../utils/AppConfig';
+import { Section } from '@/shared/Section';
 
 export interface Props {
   head: {
@@ -25,6 +27,22 @@ const {
     <link rel='icon' type='image/x-icon' href='/favicon.ico' />
   </head>
   <body class='bg-slate-900 text-gray-100'>
+    <Section>
+      <div class='flex justify-end gap-2'>
+        <a href="https://github.com/ramirospinelli">
+          <HeroSocial src="/assets/images/github.png" alt="Github icon" />
+        </a>
+        <a href="https://www.linkedin.com/in/ramiro-spinelli/">
+          <HeroSocial src="/assets/images/linkedin.png" alt="Linkedin icon" />
+        </a>
+        <a href="https://www.instagram.com/ramirospinelli">
+          <HeroSocial
+            src="/assets/images/instagram.png"
+            alt="Instagram icon"
+          />
+        </a>
+      </div>
+    </Section>
     <slot></slot>
   </body>
 </html>

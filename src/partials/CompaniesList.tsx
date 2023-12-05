@@ -14,6 +14,7 @@ const CompaniesList = () => (
     <div className="flex flex-col gap-6">
       <Company
         name="Kodaris"
+        role="Senior UX Engineer"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         bibendum. Nunc non posuere consectetur, justo erat semper enim, non
         hendrerit dui odio id enim."
@@ -36,6 +37,7 @@ const CompaniesList = () => (
       />
       <Company
         name="Sovos"
+        role="Senior Software Engineer"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         bibendum. Nunc non posuere consectetur, justo erat semper enim, non
         hendrerit dui odio id enim."
@@ -55,6 +57,7 @@ const CompaniesList = () => (
       />
       <Company
         name="Axioma Studios"
+        role="Senior Full Stack Developer"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         bibendum. Nunc non posuere consectetur, justo erat semper enim, non
         hendrerit dui odio id enim."
@@ -74,6 +77,7 @@ const CompaniesList = () => (
       />
       <Company
         name="Lenio Labs"
+        role="Frontend Developer"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         bibendum. Nunc non posuere consectetur, justo erat semper enim, non
         hendrerit dui odio id enim."
@@ -91,6 +95,7 @@ const CompaniesList = () => (
       />
       <Company
         name="Global Learning"
+        role="Academic Assistant"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         bibendum. Nunc non posuere consectetur, justo erat semper enim, non
         hendrerit dui odio id enim."
