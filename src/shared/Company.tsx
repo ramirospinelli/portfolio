@@ -9,6 +9,7 @@ type ICompanyProps = {
   description: string;
   link: string;
   category: ReactNode;
+  date: string;
 };
 
 const Company = (props: ICompanyProps) => (
@@ -16,7 +17,7 @@ const Company = (props: ICompanyProps) => (
     <div className="shrink-0">
       <a href={props.link}>
         <img
-          className="h-18 w-36 hover:translate-y-1"
+          className="w-36 hover:translate-y-1"
           src={props.img.src}
           alt={props.img.alt}
           loading="lazy"
@@ -32,7 +33,7 @@ const Company = (props: ICompanyProps) => (
 
         <div className="ml-3 flex flex-wrap gap-2">{props.category}</div>
       </div>
-
+      <p className="text-xs">{props.date}</p>
       <p className="mt-3 text-gray-400">{props.description}</p>
     </div>
   </div>

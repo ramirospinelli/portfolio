@@ -17,6 +17,7 @@ const CompaniesList = () => (
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         bibendum. Nunc non posuere consectetur, justo erat semper enim, non
         hendrerit dui odio id enim."
+        date="OCT 2023 - PRESENT"
         link="/"
         img={{
           src: '/assets/images/kodaris.png',
@@ -38,6 +39,7 @@ const CompaniesList = () => (
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         bibendum. Nunc non posuere consectetur, justo erat semper enim, non
         hendrerit dui odio id enim."
+        date="AUG 2017 - JUN 2021 / MAR 2022 - NOV 2023"
         link="/"
         img={{ src: '/assets/images/sovos.png', alt: 'Project Fire' }}
         category={
@@ -56,6 +58,7 @@ const CompaniesList = () => (
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         bibendum. Nunc non posuere consectetur, justo erat semper enim, non
         hendrerit dui odio id enim."
+        date="AUG 2020 - JUL 2022"
         link="/"
         img={{ src: '/assets/images/axioma.png', alt: 'Project Maps' }}
         category={
@@ -74,6 +77,7 @@ const CompaniesList = () => (
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         bibendum. Nunc non posuere consectetur, justo erat semper enim, non
         hendrerit dui odio id enim."
+        date="JUN 2021 - FEB 2022"
         link="/"
         img={{ src: '/assets/images/leniolabs.png', alt: 'Project Maps' }}
         category={
@@ -90,6 +94,7 @@ const CompaniesList = () => (
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         bibendum. Nunc non posuere consectetur, justo erat semper enim, non
         hendrerit dui odio id enim."
+        date="SEPT 2020 - OCT 2021"
         link="/"
         img={{ src: '/assets/images/globallearning.png', alt: 'Project Maps' }}
         category={
