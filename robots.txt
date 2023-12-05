@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ramirospinelli.github.io/portfolio/sitemap-index.xml
