@@ -12,7 +12,6 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx,.astro .",
     "build-types": "tsc --noEmit --pretty",
     "prepare": "husky install",
-    "predeploy": "npm run build",
     "deploy": "astro build && gh-pages -d dist"
   },
   "devDependencies": {
