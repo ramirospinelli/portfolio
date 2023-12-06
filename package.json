@@ -2,7 +2,6 @@
   "name": "astro-boilerplate",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://ramirospinelli.github.io/portfolio",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
