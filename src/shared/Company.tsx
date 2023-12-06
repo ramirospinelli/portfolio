@@ -18,7 +18,7 @@ const Company = (props: ICompanyProps) => (
     <div className="shrink-0">
       <a href={props.link}>
         <img
-          className="w-36 hover:translate-y-1"
+          className="mb-4 w-36 hover:translate-y-1"
           src={props.img.src}
           alt={props.img.alt}
           loading="lazy"
@@ -29,12 +29,12 @@ const Company = (props: ICompanyProps) => (
     <div>
       <div className="flex flex-col items-start gap-y-2 md:flex-col ">
         <a className="hover:text-cyan-400" href={props.link}>
-          <div className="text-xl font-semibold">
+          <div className="mb-2 text-xl font-semibold">
             {props.name}, {props.role}
           </div>
         </a>
 
-        <div className="flex flex-wrap gap-2">{props.category}</div>
+        <div className="mb-2 flex flex-wrap gap-2">{props.category}</div>
       </div>
       <p className="my-2 text-xs">{props.date}</p>
       <p className="mt-3 text-gray-400">{props.description}</p>

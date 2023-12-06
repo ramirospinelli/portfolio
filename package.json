@@ -12,7 +12,7 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx,.astro .",
     "build-types": "tsc --noEmit --pretty",
     "prepare": "husky install",
-    "deploy": "astro build && gh-pages -d dist"
+    "deploy": "astro build && npx tailwindcss -o dist/global.css && gh-pages -d dist"
   },
   "devDependencies": {
     "@astrojs/react": "^3.0.3",
