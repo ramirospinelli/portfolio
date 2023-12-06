@@ -21,6 +21,7 @@ const Contact = () => {
   const handleSubmit = (e: any) => {
     e.preventDefault();
     setLoading(true);
+
     emailjs
       .send(
         'service_0k4fmta',
@@ -51,76 +52,73 @@ const Contact = () => {
       .finally(() => setLoading(false));
   };
   return (
-    <Section>
-      <div>
-        <div className="flex flex-row gap-1 text-3xl font-bold">
-          <h1>Get in</h1>
-          <h1>
-            <GradientText>Touch</GradientText> 📩
-          </h1>
-        </div>
-
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className="mt-10 flex flex-col gap-6"
-        >
-          <label className="flex flex-col">
-            <span className="mb-4 font-medium">Your Name</span>
-            <input
-              required
-              type="text"
-              name="name"
-              value={form.name}
-              onChange={handleChange}
-              placeholder="What's your name?"
-              className="
+    <Section
+      title={
+        <>
+          Get in <GradientText>Touch</GradientText> 🤓
+        </>
+      }
+    >
+      <form
+        ref={formRef}
+        onSubmit={handleSubmit}
+        className="mt-10 flex flex-col gap-6"
+      >
+        <label className="flex flex-col">
+          <span className="mb-4 font-medium">Your Name</span>
+          <input
+            required
+            type="text"
+            name="name"
+            value={form.name}
+            onChange={handleChange}
+            placeholder="What's your name?"
+            className="
               rounded-lg
               border-none border-l-amber-50 px-6
               py-4 font-medium
               text-slate-900 outline-none"
-            />
-          </label>
-          <label className="flex flex-col">
-            <span className=" mb-4 font-medium">Your Email</span>
-            <input
-              required
-              type="email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              placeholder="What's your email?"
-              className="
+          />
+        </label>
+        <label className="flex flex-col">
+          <span className=" mb-4 font-medium">Your Email</span>
+          <input
+            required
+            type="email"
+            name="email"
+            value={form.email}
+            onChange={handleChange}
+            placeholder="What's your email?"
+            className="
               rounded-lg
               border-none px-6 py-4
               font-medium text-slate-900 outline-none"
-            />
-          </label>
-          <label className="flex flex-col">
-            <span className="mb-4 font-medium">Your Message</span>
-            <textarea
-              required
-              rows={7}
-              name="message"
-              value={form.message}
-              onChange={handleChange}
-              placeholder="What's your message?"
-              className="
+          />
+        </label>
+        <label className="flex flex-col">
+          <span className="mb-4 font-medium">Your Message</span>
+          <textarea
+            required
+            rows={7}
+            name="message"
+            value={form.message}
+            onChange={handleChange}
+            placeholder="What's your message?"
+            className="
               resize-none
               rounded-lg border-none px-6
               py-4 font-medium text-slate-900 outline-none"
-            />
-          </label>
+          />
+        </label>
 
-          <button
-            type="submit"
-            className="h-8 rounded  bg-sky-500 px-4 font-bold text-white hover:bg-cyan-400"
-            disabled={loading}
-          >
-            <h1>{loading ? 'Sending' : 'Send'}</h1>
-          </button>
-        </form>
-      </div>
+        <button
+          type="submit"
+          className="h-8 rounded  bg-sky-500 px-4 font-bold text-white hover:bg-cyan-400"
+          disabled={loading}
+        >
+          <h1>{loading ? 'Sending' : 'Send'}</h1>
+        </button>
+      </form>
     </Section>
   );
 };

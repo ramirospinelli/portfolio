@@ -1,7 +1,5 @@
 import type { ReactNode } from 'react';
 
-import type { Values } from '../types/TypeUnion';
-
 export const ColorTags = {
   SLATE: 'SLATE',
   GRAY: 'GRAY',
@@ -26,6 +24,8 @@ export const ColorTags = {
   PINK: 'PINK',
   ROSE: 'ROSE',
 } as const;
+
+type Values<T> = T[keyof T];
 
 type ITagsProps = {
   color: Values<typeof ColorTags>;

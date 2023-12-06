@@ -7,16 +7,9 @@ import { astroImageTools } from 'astro-imagetools';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://ramirospinelli.github.io/',
+  site: 'https://ramirospinelli.netlify.app/',
   base: '',
-  trailingSlash: 'always', // Use to always append '/' at end of url
-  markdown: {
-    shikiConfig: {
-      // Choose from Shiki's built-in themes (or add your own)
-      // https://github.com/shikijs/shiki/blob/main/docs/themes.md
-      theme: 'monokai',
-    },
-  },
+  trailingSlash: 'always',
   integrations: [
     react(),
     tailwind({}),
