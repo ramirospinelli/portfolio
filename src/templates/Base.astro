@@ -1,7 +1,6 @@
 ---
-import { HeroSocial } from '@/shared/HeroSocial';
 import { AppConfig } from '../utils/AppConfig';
-import { Section } from '@/shared/Section';
+import Social from '@/partials/Social';
 
 export interface Props {
   head: {
@@ -25,26 +24,11 @@ const Css = Astro.site + '/global.css'
     <meta name='author' content={AppConfig.author} />
 
     <link rel='alternate' type='application/rss+xml' href='/rss.xml' />
-    <link rel='icon' type='image/x-icon' href='/portfolio/favicon.ico' />
+    <link rel='icon' type='image/x-icon' href='/favicon.ico' />
     <link rel="stylesheet" type="text/css" href={Css} />
   </head>
   <body class='bg-slate-900 text-gray-100'>
-    <Section>
-      <div class='flex justify-end gap-2'>
-        <a href="https://github.com/ramirospinelli">
-          <HeroSocial src="/portfolio/assets/images/github.png" alt="Github icon" />
-        </a>
-        <a href="https://www.linkedin.com/in/ramiro-spinelli/">
-          <HeroSocial src="/portfolio/assets/images/linkedin.png" alt="Linkedin icon" />
-        </a>
-        <a href="https://www.instagram.com/ramirospinelli">
-          <HeroSocial
-            src="/portfolio/assets/images/instagram.png"
-            alt="Instagram icon"
-          />
-        </a>
-      </div>
-    </Section>
+    <Social/>
     <slot></slot>
   </body>
 </html>

@@ -19,7 +19,7 @@ const CompaniesList = () => (
         date="OCT 2023 - PRESENT"
         link="https://www.kodaris.com/"
         img={{
-          src: '/portfolio/assets/images/kodaris.png',
+          src: '/assets/images/kodaris.png',
           alt: 'Kodaris',
         }}
         category={
@@ -40,7 +40,7 @@ const CompaniesList = () => (
         description="Sovos is the world's largest network for electronic invoice processing, managing over 2.6 billion electronic documents annually in Latin America alone. As a software engineer, my tasks included developing and testing new features in both the backend and frontend, as well as deploying them."
         date="AUG 2017 - JUN 2021 / MAR 2022 - NOV 2023"
         link="https://sovos.com/"
-        img={{ src: '/portfolio/assets/images/sovos.png', alt: 'Sovos' }}
+        img={{ src: '/assets/images/sovos.png', alt: 'Sovos' }}
         category={
           <>
             <Tags color={ColorTags.BLUE}>JAVA</Tags>
@@ -58,7 +58,7 @@ const CompaniesList = () => (
         description="Axioma is a company specializing in the design and development of responsive websites, e-commerce, institutional sites, and intranets, as well as mobile and desktop applications. As a full-stack software developer, I worked on various web and mobile projects, handling tasks related to backend, databases, and frontend development."
         date="AUG 2020 - JUL 2022"
         link="https://www.axiomastudios.com/"
-        img={{ src: '/portfolio/assets/images/axioma.png', alt: 'Axioma' }}
+        img={{ src: '/assets/images/axioma.png', alt: 'Axioma' }}
         category={
           <>
             <Tags color={ColorTags.SKY}>React JS</Tags>
@@ -77,7 +77,7 @@ const CompaniesList = () => (
         date="JUN 2021 - FEB 2022"
         link="https://www.leniolabs.com/"
         img={{
-          src: '/portfolio/assets/images/leniolabs.png',
+          src: '/assets/images/leniolabs.png',
           alt: 'Leniolabs',
         }}
         category={
@@ -96,7 +96,7 @@ const CompaniesList = () => (
         date="SEPT 2020 - OCT 2021"
         link="https://www.linkedin.com/company/globallearning-ar/"
         img={{
-          src: '/portfolio/assets/images/globallearning.png',
+          src: '/assets/images/globallearning.png',
           alt: 'Global Learning',
         }}
         category={

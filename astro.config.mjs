@@ -8,7 +8,7 @@ import { astroImageTools } from 'astro-imagetools';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://ramirospinelli.github.io/portfolio',
-  base: '/portfolio/',
+  base: '',
   trailingSlash: 'always', // Use to always append '/' at end of url
   markdown: {
     shikiConfig: {
