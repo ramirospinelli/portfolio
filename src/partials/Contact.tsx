@@ -21,25 +21,21 @@ const Contact = () => {
   const handleSubmit = (e: any) => {
     e.preventDefault();
     setLoading(true);
-
-    // sign up on emailjs.com (select the gmail service and connect your account).
-    // click on create a new template then click on save.
     emailjs
       .send(
-        'serviceID', // paste your ServiceID here (you'll get one when your service is created).
-        'templateID', // paste your TemplateID here (you'll find it under email templates).
+        'service_0k4fmta',
+        'template_um83ljt',
         {
           from_name: form.name,
-          to_name: 'YourName', // put your name here.
+          to_name: 'Ramiro',
           from_email: form.email,
-          to_email: 'youremail@gmail.com', // put your email here.
+          to_email: 'youremail@gmail.com',
           message: form.message,
         },
-        'yourpublickey' // paste your Public Key here. You'll get it in your profile section.
+        'g_Tyt26s8EzPcorh5'
       )
       .then(
         () => {
-          setLoading(false);
           alert('Thank you. I will get back to you as soon as possible.');
 
           setForm({
@@ -49,10 +45,10 @@ const Contact = () => {
           });
         },
         (error) => {
-          setLoading(false);
-          alert('Something went wrong. Please try again.');
+          alert(`Something went wrong. Please try again., ${error}`);
         }
-      );
+      )
+      .finally(() => setLoading(false));
   };
   return (
     <Section>
@@ -66,12 +62,13 @@ const Contact = () => {
 
         <form
           ref={formRef}
-          onSubmit={() => null}
+          onSubmit={handleSubmit}
           className="mt-10 flex flex-col gap-6"
         >
           <label className="flex flex-col">
             <span className="mb-4 font-medium">Your Name</span>
             <input
+              required
               type="text"
               name="name"
               value={form.name}
@@ -87,6 +84,7 @@ const Contact = () => {
           <label className="flex flex-col">
             <span className=" mb-4 font-medium">Your Email</span>
             <input
+              required
               type="email"
               name="email"
               value={form.email}
@@ -101,6 +99,7 @@ const Contact = () => {
           <label className="flex flex-col">
             <span className="mb-4 font-medium">Your Message</span>
             <textarea
+              required
               rows={7}
               name="message"
               value={form.message}
@@ -116,6 +115,7 @@ const Contact = () => {
           <button
             type="submit"
             className="h-8 rounded  bg-sky-500 px-4 font-bold text-white hover:bg-cyan-400"
+            disabled={loading}
           >
             <h1>{loading ? 'Sending' : 'Send'}</h1>
           </button>
