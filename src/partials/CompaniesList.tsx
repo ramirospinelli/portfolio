@@ -7,7 +7,7 @@ const CompaniesList = () => (
   <Section
     title={
       <>
-        My <GradientText>Experience</GradientText>
+        My <GradientText>Experience</GradientText> 🤓
       </>
     }
   >
@@ -15,11 +15,9 @@ const CompaniesList = () => (
       <Company
         name="Kodaris"
         role="Senior UX Engineer"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        bibendum. Nunc non posuere consectetur, justo erat semper enim, non
-        hendrerit dui odio id enim."
+        description="Kodaris is a company that manages the supply chain platform for large construction clients. My role as a frontend developer involves maintaining and adding new features to clients' e-commerce platforms and the ERP."
         date="OCT 2023 - PRESENT"
-        link="/"
+        link="https://www.kodaris.com/"
         img={{
           src: '/portfolio/assets/images/kodaris.png',
           alt: 'Kodaris',
@@ -32,17 +30,16 @@ const CompaniesList = () => (
             <Tags color={ColorTags.YELLOW}>JavaScript</Tags>
             <Tags color={ColorTags.LIME}>HTML</Tags>
             <Tags color={ColorTags.EMERALD}>CSS</Tags>
+            <Tags color={ColorTags.INDIGO}>EJS</Tags>
           </>
         }
       />
       <Company
         name="Sovos"
         role="Senior Software Engineer"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        bibendum. Nunc non posuere consectetur, justo erat semper enim, non
-        hendrerit dui odio id enim."
+        description="Sovos is the world's largest network for electronic invoice processing, managing over 2.6 billion electronic documents annually in Latin America alone. As a software engineer, my tasks included developing and testing new features in both the backend and frontend, as well as deploying them."
         date="AUG 2017 - JUN 2021 / MAR 2022 - NOV 2023"
-        link="/"
+        link="https://sovos.com/"
         img={{ src: '/portfolio/assets/images/sovos.png', alt: 'Sovos' }}
         category={
           <>
@@ -58,11 +55,9 @@ const CompaniesList = () => (
       <Company
         name="Axioma Studios"
         role="Senior Full Stack Developer"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        bibendum. Nunc non posuere consectetur, justo erat semper enim, non
-        hendrerit dui odio id enim."
+        description="Axioma is a company specializing in the design and development of responsive websites, e-commerce, institutional sites, and intranets, as well as mobile and desktop applications. As a full-stack software developer, I worked on various web and mobile projects, handling tasks related to backend, databases, and frontend development."
         date="AUG 2020 - JUL 2022"
-        link="/"
+        link="https://www.axiomastudios.com/"
         img={{ src: '/portfolio/assets/images/axioma.png', alt: 'Axioma' }}
         category={
           <>
@@ -78,11 +73,9 @@ const CompaniesList = () => (
       <Company
         name="Lenio Labs"
         role="Frontend Developer"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        bibendum. Nunc non posuere consectetur, justo erat semper enim, non
-        hendrerit dui odio id enim."
+        description="Lenio is a company that offers knowledge and experience on all of the main frontend JavaScript stacks: React, Angular, AngularJS, Vue, D3js. As a frontend developer, I worked for one of their major clients, Ice, on the development and maintenance of their web application for mortgage management."
         date="JUN 2021 - FEB 2022"
-        link="/"
+        link="https://www.leniolabs.com/"
         img={{
           src: '/portfolio/assets/images/leniolabs.png',
           alt: 'Leniolabs',
@@ -99,11 +92,9 @@ const CompaniesList = () => (
       <Company
         name="Global Learning"
         role="Academic Assistant"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        bibendum. Nunc non posuere consectetur, justo erat semper enim, non
-        hendrerit dui odio id enim."
+        description="Global Learning is a company that offers courses, including the Full Stack JavaScript Developer course. I worked as an academic assistant in the delivery of the first course, which had more than 20 students. We provided them with an introduction to the world of software development, covering the fundamentals of programming and the most commonly used agile methodologies today."
         date="SEPT 2020 - OCT 2021"
-        link="/"
+        link="https://www.linkedin.com/company/globallearning-ar/"
         img={{
           src: '/portfolio/assets/images/globallearning.png',
           alt: 'Global Learning',

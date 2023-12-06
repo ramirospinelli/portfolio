@@ -13,14 +13,14 @@ const Hero = () => (
       description={
         <>
           <p>
-            Passionate for technology and outdoor sports. More than 6 years
-            helping companies to achieve their goals developing web applications
-            solutions with the most modern Javascript frameworks and libraries.
+            I am a <GradientText>frontend</GradientText> developer with a love
+            for outdoor sports and technology. I have over 5 years of experience
+            helping companies achieve their goals by developing web and mobile
+            applications using the latest JavaScript tools.
           </p>
           <p>
-            {' '}
-            I like to keep learning every day and continue growing as a
-            professional building good relationships with my colleagues.
+            I enjoy continuous learning and building strong relationships with
+            my colleagues every day.
           </p>
         </>
       }

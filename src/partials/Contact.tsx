@@ -5,7 +5,7 @@ import { GradientText } from '@/shared/Gradient';
 import { Section } from '@/shared/Section';
 
 const Contact = () => {
-  const formRef = useRef<HTMLFormElement>(null);
+  const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     name: '',
@@ -60,13 +60,13 @@ const Contact = () => {
         <div className="flex flex-row gap-1 text-3xl font-bold">
           <h1>Get in</h1>
           <h1>
-            <GradientText>Touch</GradientText>
+            <GradientText>Touch</GradientText> 📩
           </h1>
         </div>
 
         <form
           ref={formRef}
-          onSubmit={handleSubmit}
+          onSubmit={() => null}
           className="mt-10 flex flex-col gap-6"
         >
           <label className="flex flex-col">
