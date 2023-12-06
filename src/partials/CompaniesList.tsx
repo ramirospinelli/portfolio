@@ -43,7 +43,7 @@ const CompaniesList = () => (
         img={{ src: '/assets/images/sovos.png', alt: 'Sovos' }}
         category={
           <>
-            <Tags color={ColorTags.BLUE}>JAVA</Tags>
+            <Tags color={ColorTags.BLUE}>Java</Tags>
             <Tags color={ColorTags.SKY}>React JS</Tags>
             <Tags color={ColorTags.YELLOW}>JavaScript</Tags>
             <Tags color={ColorTags.ROSE}>TypeScript</Tags>

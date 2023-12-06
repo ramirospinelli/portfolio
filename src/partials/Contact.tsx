@@ -55,7 +55,7 @@ const Contact = () => {
     <Section
       title={
         <>
-          Get in <GradientText>Touch</GradientText> 🤓
+          Get in <GradientText>Touch</GradientText> 📩
         </>
       }
     >
