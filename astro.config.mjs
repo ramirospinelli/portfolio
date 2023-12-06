@@ -7,7 +7,7 @@ import { astroImageTools } from 'astro-imagetools';
 
 // https://astro.build/config
 export default defineConfig({
-  site: '',
+  site: 'https://ramirospinelli.github.io/',
   base: '',
   trailingSlash: 'always', // Use to always append '/' at end of url
   markdown: {
