@@ -14,9 +14,7 @@ const HeroAvatar = (props: IHeroAvatarProps) => (
 
       <p className="mt-6 text-xl leading-9">{props.description}</p>
 
-      <div className="mt-3 flex justify-center gap-2">
-        {props.socialButtons}
-      </div>
+      <div className="mt-3 gap-2">{props.socialButtons}</div>
     </div>
 
     <div className="mt-8 shrink-0">{props.avatar}</div>

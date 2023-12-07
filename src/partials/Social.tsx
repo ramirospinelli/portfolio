@@ -4,7 +4,7 @@ import { Section } from '@/shared/Section';
 const Social = () => {
   return (
     <Section>
-      <div className="flex justify-end gap-2">
+      <div className="flex gap-2">
         <a href="https://github.com/ramirospinelli">
           <HeroSocial src="/assets/images/github.png" alt="Github icon" />
         </a>

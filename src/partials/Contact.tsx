@@ -1,8 +1,10 @@
 import emailjs from '@emailjs/browser';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
-import { GradientText } from '@/shared/Gradient';
 import { Section } from '@/shared/Section';
+
+import i18n from '../pages/i18n';
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -12,6 +14,7 @@ const Contact = () => {
     email: '',
     message: '',
   });
+  const { t } = useTranslation('contact');
 
   const handleChange = (e: any) => {
     const { name, value } = e.target;
@@ -46,33 +49,30 @@ const Contact = () => {
           });
         },
         (error) => {
-          alert(`Something went wrong. Please try again., ${error}`);
+          alert(`Something went wrong. Please try again. ${error}`);
         }
       )
       .finally(() => setLoading(false));
   };
+
+  useEffect(() => i18n.init(), []);
+
   return (
-    <Section
-      title={
-        <>
-          Get in <GradientText>Touch</GradientText> 📩
-        </>
-      }
-    >
+    <Section title={<>{t('title')} 📩</>}>
       <form
         ref={formRef}
         onSubmit={handleSubmit}
         className="mt-10 flex flex-col gap-6"
       >
         <label className="flex flex-col">
-          <span className="mb-4 font-medium">Your Name</span>
+          <span className="mb-4 font-medium">{t('name.label')}</span>
           <input
             required
             type="text"
             name="name"
             value={form.name}
             onChange={handleChange}
-            placeholder="What's your name?"
+            placeholder={t('name.placeholder')}
             className="
               rounded-lg
               border-none border-l-amber-50 px-6
@@ -81,14 +81,14 @@ const Contact = () => {
           />
         </label>
         <label className="flex flex-col">
-          <span className=" mb-4 font-medium">Your Email</span>
+          <span className=" mb-4 font-medium">{t('email.label')}</span>
           <input
             required
             type="email"
             name="email"
             value={form.email}
             onChange={handleChange}
-            placeholder="What's your email?"
+            placeholder={t('email.placeholder')}
             className="
               rounded-lg
               border-none px-6 py-4
@@ -96,14 +96,14 @@ const Contact = () => {
           />
         </label>
         <label className="flex flex-col">
-          <span className="mb-4 font-medium">Your Message</span>
+          <span className="mb-4 font-medium">{t('message.label')}</span>
           <textarea
             required
             rows={7}
             name="message"
             value={form.message}
             onChange={handleChange}
-            placeholder="What's your message?"
+            placeholder={t('message.placeholder')}
             className="
               resize-none
               rounded-lg border-none px-6
@@ -116,7 +116,7 @@ const Contact = () => {
           className="h-8 rounded  bg-sky-500 px-4 font-bold text-white hover:bg-cyan-400"
           disabled={loading}
         >
-          <h1>{loading ? 'Sending' : 'Send'}</h1>
+          <h1>{loading ? t('button.sending') : t('button.send')}</h1>
         </button>
       </form>
     </Section>

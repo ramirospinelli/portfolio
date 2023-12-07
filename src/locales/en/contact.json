@@ -1,0 +1,19 @@
+{
+  "title": "Get in Touch",
+  "name": {
+    "label": "Your Name",
+    "placeholder": "What's your name?"
+  },
+  "email": {
+    "label": "Your Email",
+    "placeholder": "What's your email?"
+  },
+  "message": {
+    "label": "Your Message",
+    "placeholder": "What's your message?"
+  },
+  "button": {
+    "send": "Send",
+    "sending": "Sending..."
+  }
+}

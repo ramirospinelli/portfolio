@@ -1,0 +1,19 @@
+{
+  "title": "Sigamos en Contacto",
+  "name": {
+    "label": "Tu Nombre",
+    "placeholder": "Cual es tu nombre?"
+  },
+  "email": {
+    "label": "Tu Email",
+    "placeholder": "Cual es tu email?"
+  },
+  "message": {
+    "label": "Tu Mensaje",
+    "placeholder": "Cual es tu mensaje?"
+  },
+  "button": {
+    "send": "Enviar",
+    "sending": "Enviando..."
+  }
+}
