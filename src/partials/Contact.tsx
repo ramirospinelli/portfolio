@@ -2,6 +2,7 @@ import emailjs from '@emailjs/browser';
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import { GradientText } from '@/shared/Gradient';
 import { Section } from '@/shared/Section';
 
 import i18n from '../pages/i18n';
@@ -40,7 +41,7 @@ const Contact = () => {
       )
       .then(
         () => {
-          alert('Thank you. I will get back to you as soon as possible.');
+          alert(t('alert.success'));
 
           setForm({
             name: '',
@@ -49,7 +50,7 @@ const Contact = () => {
           });
         },
         (error) => {
-          alert(`Something went wrong. Please try again. ${error}`);
+          alert(`${t('alert.error')} ${error}`);
         }
       )
       .finally(() => setLoading(false));
@@ -58,7 +59,14 @@ const Contact = () => {
   useEffect(() => i18n.init(), []);
 
   return (
-    <Section title={<>{t('title')} 📩</>}>
+    <Section
+      title={
+        <>
+          {t('title.part1')}
+          <GradientText>{t('title.part2')}</GradientText> 📩
+        </>
+      }
+    >
       <form
         ref={formRef}
         onSubmit={handleSubmit}

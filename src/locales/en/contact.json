@@ -1,5 +1,8 @@
 {
-  "title": "Get in Touch",
+  "title": {
+    "part1": "Get in ",
+    "part2": "Touch"
+  },
   "name": {
     "label": "Your Name",
     "placeholder": "What's your name?"
@@ -15,5 +18,9 @@
   "button": {
     "send": "Send",
     "sending": "Sending..."
+  },
+  "alert": {
+    "success": "Thank you. I will get back to you as soon as possible.",
+    "error": "Something went wrong. Please try again."
   }
 }

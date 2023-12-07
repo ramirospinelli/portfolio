@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import { GradientText } from '@/shared/Gradient';
+
 import i18n from '../pages/i18n';
 import { Company } from '../shared/Company';
 import { Section } from '../shared/Section';
@@ -12,7 +14,14 @@ const CompaniesList = () => {
   useEffect(() => i18n.init(), []);
 
   return (
-    <Section title={<>{t('title')} 🤓</>}>
+    <Section
+      title={
+        <>
+          {t('title.part1')}
+          <GradientText>{t('title.part2')}</GradientText> 🤓
+        </>
+      }
+    >
       <div className="flex flex-col gap-6">
         <Company
           name="Kodaris"

@@ -1,6 +1,8 @@
 ---
+import Social from '@/partials/Social';
 import { AppConfig } from '../utils/AppConfig';
 import LanguagePicker from '@/partials/LanguagePicker';
+import { Section } from '@/shared/Section';
 
 export interface Props {
   head: {
@@ -26,7 +28,6 @@ const {
     <link rel='icon' type='image/x-icon' href='/favicon.ico' />
   </head>
   <body class='bg-slate-900 text-gray-100'>
-    <LanguagePicker client:load/>
     <slot></slot>
   </body>
 </html>

@@ -6,7 +6,6 @@ import { HeroAvatar } from '@/shared/HeroAvatar';
 import { Section } from '@/shared/Section';
 
 import i18n from '../pages/i18n';
-import Social from './Social';
 
 const Hero = () => {
   const { t } = useTranslation('hero');
@@ -49,7 +48,6 @@ const Hero = () => {
             </a>
           </div>
         }
-        socialButtons={<Social />}
       />
     </Section>
   );
