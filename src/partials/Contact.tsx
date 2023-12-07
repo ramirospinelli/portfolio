@@ -56,7 +56,9 @@ const Contact = () => {
       .finally(() => setLoading(false));
   };
 
-  useEffect(() => i18n.init(), []);
+  useEffect(() => {
+    i18n.init();
+  }, []);
 
   return (
     <Section

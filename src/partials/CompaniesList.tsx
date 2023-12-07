@@ -11,7 +11,9 @@ import { ColorTags, Tags } from '../shared/Tags';
 const CompaniesList = () => {
   const { t } = useTranslation('companies');
 
-  useEffect(() => i18n.init(), []);
+  useEffect(() => {
+    i18n.init();
+  }, []);
 
   return (
     <Section

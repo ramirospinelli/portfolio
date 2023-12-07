@@ -10,7 +10,9 @@ import i18n from '../pages/i18n';
 const Hero = () => {
   const { t } = useTranslation('hero');
 
-  useEffect(() => i18n.init(), []);
+  useEffect(() => {
+    i18n.init();
+  }, []);
 
   return (
     <Section>
