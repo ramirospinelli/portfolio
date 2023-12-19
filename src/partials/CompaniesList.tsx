@@ -25,6 +25,25 @@ const CompaniesList = () => {
       }
     >
       <div className="flex flex-col gap-6">
+      <Company
+          name="TotalCoin"
+          role="Senior Frontend Developer"
+          description={t('totalcoin')}
+          date="DEC 2023 - PRESENT"
+          link="https://ar.totalcoin.com/"
+          img={{
+            src: '/assets/images/totalcoin.png',
+            alt: 'TotalCoin',
+          }}
+          category={
+            <>
+              <Tags color={ColorTags.SKY}>React JS</Tags>
+              <Tags color={ColorTags.INDIGO}>React Native</Tags>
+              <Tags color={ColorTags.ROSE}>TypeScript</Tags>
+              <Tags color={ColorTags.YELLOW}>JavaScript</Tags>
+            </>
+          }
+        />
         <Company
           name="Kodaris"
           role="Senior UX Engineer"
@@ -84,7 +103,7 @@ const CompaniesList = () => {
           }
         />
         <Company
-          name="Lenio Labs"
+          name="Leniolabs"
           role="Frontend Developer"
           description={t('lenio')}
           date="JUN 2021 - FEB 2022"
