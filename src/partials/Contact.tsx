@@ -37,10 +37,11 @@ const Contact = () => {
           to_email: 'youremail@gmail.com',
           message: form.message,
         },
-        'g_Tyt26s8EzPcorh5'
+        'g_Tyt26s8EzPcorh5',
       )
       .then(
         () => {
+          // eslint-disable-next-line no-alert, no-undef
           alert(t('alert.success'));
 
           setForm({
@@ -50,8 +51,9 @@ const Contact = () => {
           });
         },
         (error) => {
+          // eslint-disable-next-line no-alert, no-undef
           alert(`${t('alert.error')} ${error}`);
-        }
+        },
       )
       .finally(() => setLoading(false));
   };
@@ -67,13 +69,11 @@ const Contact = () => {
           {t('title.part1')}
           <GradientText>{t('title.part2')}</GradientText> 📩
         </>
-      }
-    >
+      }>
       <form
         ref={formRef}
         onSubmit={handleSubmit}
-        className="mt-10 flex flex-col gap-6"
-      >
+        className="mt-10 flex flex-col gap-6">
         <label className="flex flex-col">
           <span className="mb-4 font-medium">{t('name.label')}</span>
           <input
@@ -124,8 +124,7 @@ const Contact = () => {
         <button
           type="submit"
           className="h-8 rounded  bg-sky-500 px-4 font-bold text-white hover:bg-cyan-400"
-          disabled={loading}
-        >
+          disabled={loading}>
           <h1>{loading ? t('button.sending') : t('button.send')}</h1>
         </button>
       </form>

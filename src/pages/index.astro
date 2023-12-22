@@ -1,18 +1,19 @@
 ---
 import Contact from '@/partials/Contact';
+import Header from '@/partials/Header';
+
 import { CompaniesList } from '../partials/CompaniesList';
 import { Hero } from '../partials/Hero';
 import Base from '../templates/Base.astro';
 import { AppConfig } from '../utils/AppConfig';
-import Header from '@/partials/Header';
 
 const { title } = AppConfig;
 const { description } = AppConfig;
 ---
 
 <Base head={{ title, description }}>
-  <Header client:load/>
-  <Hero client:load/>
-  <CompaniesList client:load/>
-  <Contact client:load/>
+  <Header client:load />
+  <Hero client:load />
+  <CompaniesList client:load />
+  <Contact client:load />
 </Base>

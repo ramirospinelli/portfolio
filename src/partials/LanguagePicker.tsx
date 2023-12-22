@@ -15,8 +15,7 @@ const LanguagePicker = () => {
       <select
         onChange={(e) => changeLanguage(e.target.value)}
         value={language}
-        className="bg-slate-900"
-      >
+        className="bg-slate-900">
         <option value="en">English</option>
         <option value="es">Español</option>
       </select>

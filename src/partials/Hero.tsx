@@ -42,8 +42,7 @@ const Hero = () => {
             <a
               href="/assets/resume.pdf"
               download="Ramiro Spinelli - Resume"
-              className="inline-block"
-            >
+              className="inline-block">
               <button className="h-8 rounded  bg-sky-500 px-4 font-bold text-white hover:bg-cyan-400">
                 {t('download_button')}
               </button>
