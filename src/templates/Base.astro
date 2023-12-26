@@ -24,7 +24,11 @@ const {
     <link rel='alternate' type='application/rss+xml' href='/rss.xml' />
     <link rel='icon' type='image/x-icon' href='/favicon.ico' />
   </head>
-  <body class='bg-slate-900 text-gray-100'>
-    <slot></slot>
+  <body class='text-gray-100'>
+    <div
+      class='absolute top-0 z-[-2]  w-screen bg-slate-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]'
+    >
+      <slot></slot>
+    </div>
   </body>
 </html>

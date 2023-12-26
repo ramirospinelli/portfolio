@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import ReactTypingEffect from 'react-typing-effect';
 
 import { GradientText } from '@/shared/Gradient';
 import { HeroAvatar } from '@/shared/HeroAvatar';
@@ -20,7 +21,14 @@ const Hero = () => {
         title={
           <>
             {t('title')}
-            <GradientText>Ramiro</GradientText>
+            <GradientText>
+              <ReactTypingEffect
+                text={['Ramiro.']}
+                cursorRenderer={(cursor: string) => (
+                  <GradientText>{cursor}</GradientText>
+                )}
+              />
+            </GradientText>
             👋
           </>
         }

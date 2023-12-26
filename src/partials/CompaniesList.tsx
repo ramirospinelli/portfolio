@@ -20,7 +20,7 @@ const CompaniesList = () => {
       title={
         <>
           {t('title.part1')}
-          <GradientText>{t('title.part2')}</GradientText> 🤓
+          <GradientText>{t('title.part2')}</GradientText> 💼
         </>
       }>
       <div className="flex flex-col gap-6">
