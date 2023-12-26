@@ -1,8 +1,7 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import ReactTypingEffect from 'react-typing-effect';
+import Typewriter from 'typewriter-effect';
 
-import { GradientText } from '@/shared/Gradient';
 import { HeroAvatar } from '@/shared/HeroAvatar';
 import { Section } from '@/shared/Section';
 
@@ -19,18 +18,19 @@ const Hero = () => {
     <Section>
       <HeroAvatar
         title={
-          <>
+          <div className="flex gap-2">
             {t('title')}
-            <GradientText>
-              <ReactTypingEffect
-                text={['Ramiro.']}
-                cursorRenderer={(cursor: string) => (
-                  <GradientText>{cursor}</GradientText>
-                )}
-              />
-            </GradientText>
+            <Typewriter
+              options={{
+                strings: ['Ramiro.'],
+                autoStart: true,
+                loop: true,
+                wrapperClassName:
+                  'bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent',
+              }}
+            />
             👋
-          </>
+          </div>
         }
         description={
           <>
