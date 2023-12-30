@@ -1,4 +1,5 @@
 const LanguagePicker = () => {
+  // eslint-disable-next-line no-undef
   const language = window.location.pathname.replaceAll('/', '');
 
   return (

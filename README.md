@@ -17,10 +17,11 @@ The portfolio is hosted on Netlify and can be accessed through the following lin
 To run this project locally, follow these steps:
 
 1. Clone the repository: git clone https://github.com/ramirospinelli/portfolio.git
-2. npm install
+2. npm install - Node 18.18.0
 3. npm start
 
 ## Contributions 💡
+
 If you have suggestions or find any issues, feel free to open an issue or submit a pull request.
 
 Developed by [Ramiro Spinelli](https://github.com/ramirospinelli).
