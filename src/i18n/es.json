@@ -1,5 +1,5 @@
 {
-  "title": {
+  "companies_title": {
     "part1": "Mi ",
     "part2": "Experiencia"
   },
@@ -8,6 +8,35 @@
   "sovos": "Sovos es la red más grande del mundo para el procesamiento de facturas electrónicas, gestionando más de 2.6 mil millones de documentos electrónicos al año solo en América Latina. Como ingeniero de software, mis tareas incluían el desarrollo y prueba de nuevas funcionalidades tanto en el backend como en el frontend, así como su implementación.",
   "axioma": "Axioma es una empresa especializada en el diseño y desarrollo de sitios web receptivos, e-commerce, sitios institucionales e intranets, así como aplicaciones móviles y de escritorio. Como desarrollador de software full-stack, trabajé en varios proyectos web y móviles, manejando tareas relacionadas con el backend, bases de datos y desarrollo frontend.",
   "lenio": "Lenio es una empresa que ofrece conocimiento y experiencia en todas las principales pilas de JavaScript en el frontend: React, Angular, AngularJS, Vue, D3js. Como desarrollador frontend, trabajé para uno de sus principales clientes, Ice, en el desarrollo y mantenimiento de su aplicación web para la gestión de hipotecas.",
-  "globallearning":
-"Global Learning es una empresa que ofrece cursos, incluido el curso de Desarrollador Full Stack de JavaScript. Trabajé como asistente académico en el primer curso dictado, que tenía más de 20 estudiantes. Les proporcionamos una introducción al mundo del desarrollo de software, cubriendo los fundamentos de la programación y las metodologías ágiles más comúnmente utilizadas en la actualidad."
+  "globallearning": "Global Learning es una empresa que ofrece cursos, incluido el curso de Desarrollador Full Stack de JavaScript. Trabajé como asistente académico en el primer curso dictado, que tenía más de 20 estudiantes. Les proporcionamos una introducción al mundo del desarrollo de software, cubriendo los fundamentos de la programación y las metodologías ágiles más comúnmente utilizadas en la actualidad.",
+  "contact_title": {
+    "part1": "Estemos en ",
+    "part2": "Contacto"
+  },
+  "name": {
+    "label": "Tu Nombre",
+    "placeholder": "Cual es tu nombre?"
+  },
+  "email": {
+    "label": "Tu Email",
+    "placeholder": "Cual es tu email?"
+  },
+  "message": {
+    "label": "Tu Mensaje",
+    "placeholder": "Cual es tu mensaje?"
+  },
+  "button": {
+    "send": "Enviar",
+    "sending": "Enviando..."
+  },
+  "alert": {
+    "success": "Gracias! Te contactare lo mas pronto posible.",
+    "error": "Algo salio mal. Por favor intenta de nuevo."
+  },
+  "hero_title": "Hola! Soy ",
+  "description": {
+    "part1": "Soy un desarrollador frontend que le encantan los deportes al aire libre y la tecnología. Tengo más de 5 años de experiencia ayudando a las empresas a alcanzar sus objetivos mediante el desarrollo de aplicaciones web y móviles utilizando las herramientas más recientes de JavaScript.",
+    "part2": "Disfruto de aprender cosas nuevas dia a dia y construir buenas relaciones con mis colegas."
+  },
+  "download_button": "Descargar CV"
 }

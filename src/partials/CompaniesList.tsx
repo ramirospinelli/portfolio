@@ -1,33 +1,27 @@
-import { useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
-
+import type { I18NProps } from '@/i18n';
+import { getI18N } from '@/i18n';
 import { GradientText } from '@/shared/Gradient';
 
-import i18n from '../pages/i18n';
 import { Company } from '../shared/Company';
 import { Section } from '../shared/Section';
 import { ColorTags, Tags } from '../shared/Tags';
 
-const CompaniesList = () => {
-  const { t } = useTranslation('companies');
-
-  useEffect(() => {
-    i18n.init();
-  }, []);
+const CompaniesList = ({ currentLocale }: I18NProps) => {
+  const i18n = getI18N({ currentLocale });
 
   return (
     <Section
       title={
         <>
-          {t('title.part1')}
-          <GradientText>{t('title.part2')}</GradientText> 💼
+          {i18n.companies_title.part1}
+          <GradientText>{i18n.companies_title.part2}</GradientText> 💼
         </>
       }>
       <div className="flex flex-col gap-6">
         <Company
           name="TotalCoin"
           role="Senior Frontend Developer"
-          description={t('totalcoin')}
+          description={i18n.totalcoin}
           date="DEC 2023 - PRESENT"
           link="https://ar.totalcoin.com/"
           img={{
@@ -46,7 +40,7 @@ const CompaniesList = () => {
         <Company
           name="Kodaris"
           role="Senior UX Engineer"
-          description={t('kodaris')}
+          description={i18n.kodaris}
           date="OCT 2023 - PRESENT"
           link="https://www.kodaris.com/"
           img={{
@@ -68,7 +62,7 @@ const CompaniesList = () => {
         <Company
           name="Sovos"
           role="Senior Software Engineer"
-          description={t('sovos')}
+          description={i18n.sovos}
           date="AUG 2017 - JUN 2021 / MAR 2022 - NOV 2023"
           link="https://sovos.com/"
           img={{ src: '/assets/images/sovos.png', alt: 'Sovos' }}
@@ -86,7 +80,7 @@ const CompaniesList = () => {
         <Company
           name="Axioma Studios"
           role="Senior Full Stack Developer"
-          description={t('axioma')}
+          description={i18n.axioma}
           date="AUG 2020 - JUL 2022"
           link="https://www.axiomastudios.com/"
           img={{ src: '/assets/images/axioma.png', alt: 'Axioma' }}
@@ -104,7 +98,7 @@ const CompaniesList = () => {
         <Company
           name="Leniolabs"
           role="Frontend Developer"
-          description={t('lenio')}
+          description={i18n.lenio}
           date="JUN 2021 - FEB 2022"
           link="https://www.leniolabs.com/"
           img={{
@@ -123,7 +117,7 @@ const CompaniesList = () => {
         <Company
           name="Global Learning"
           role="Academic Assistant"
-          description={t('globallearning')}
+          description={i18n.globallearning}
           date="SEPT 2020 - OCT 2021"
           link="https://www.linkedin.com/company/globallearning-ar/"
           img={{

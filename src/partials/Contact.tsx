@@ -1,13 +1,13 @@
 import emailjs from '@emailjs/browser';
-import { useEffect, useRef, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useRef, useState } from 'react';
 
+import type { I18NProps } from '@/i18n';
+import { getI18N } from '@/i18n';
 import { GradientText } from '@/shared/Gradient';
 import { Section } from '@/shared/Section';
 
-import i18n from '../pages/i18n';
-
-const Contact = () => {
+const Contact = ({ currentLocale }: I18NProps) => {
+  const i18n = getI18N({ currentLocale });
   const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
@@ -15,7 +15,6 @@ const Contact = () => {
     email: '',
     message: '',
   });
-  const { t } = useTranslation('contact');
 
   const handleChange = (e: any) => {
     const { name, value } = e.target;
@@ -42,7 +41,7 @@ const Contact = () => {
       .then(
         () => {
           // eslint-disable-next-line no-alert, no-undef
-          alert(t('alert.success'));
+          alert(i18n.alert.success);
 
           setForm({
             name: '',
@@ -52,22 +51,18 @@ const Contact = () => {
         },
         (error) => {
           // eslint-disable-next-line no-alert, no-undef
-          alert(`${t('alert.error')} ${error}`);
+          alert(`${i18n.alert.error} ${error}`);
         },
       )
       .finally(() => setLoading(false));
   };
 
-  useEffect(() => {
-    i18n.init();
-  }, []);
-
   return (
     <Section
       title={
         <>
-          {t('title.part1')}
-          <GradientText>{t('title.part2')}</GradientText> 📩
+          {i18n.contact_title.part1}
+          <GradientText>{i18n.contact_title.part2}</GradientText> 📩
         </>
       }>
       <form
@@ -75,14 +70,14 @@ const Contact = () => {
         onSubmit={handleSubmit}
         className="mt-10 flex flex-col gap-6">
         <label className="flex flex-col">
-          <span className="mb-4 font-medium">{t('name.label')}</span>
+          <span className="mb-4 font-medium">{i18n.name.label}</span>
           <input
             required
             type="text"
             name="name"
             value={form.name}
             onChange={handleChange}
-            placeholder={t('name.placeholder')}
+            placeholder={i18n.name.placeholder}
             className="
               rounded-lg
               border-none border-l-amber-50 px-6
@@ -91,14 +86,14 @@ const Contact = () => {
           />
         </label>
         <label className="flex flex-col">
-          <span className=" mb-4 font-medium">{t('email.label')}</span>
+          <span className=" mb-4 font-medium">{i18n.email.label}</span>
           <input
             required
             type="email"
             name="email"
             value={form.email}
             onChange={handleChange}
-            placeholder={t('email.placeholder')}
+            placeholder={i18n.email.placeholder}
             className="
               rounded-lg
               border-none px-6 py-4
@@ -106,14 +101,14 @@ const Contact = () => {
           />
         </label>
         <label className="flex flex-col">
-          <span className="mb-4 font-medium">{t('message.label')}</span>
+          <span className="mb-4 font-medium">{i18n.message.label}</span>
           <textarea
             required
             rows={7}
             name="message"
             value={form.message}
             onChange={handleChange}
-            placeholder={t('message.placeholder')}
+            placeholder={i18n.message.placeholder}
             className="
               resize-none
               rounded-lg border-none px-6
@@ -125,7 +120,7 @@ const Contact = () => {
           type="submit"
           className="h-8 rounded  bg-sky-500 px-4 font-bold text-white hover:bg-cyan-400"
           disabled={loading}>
-          <h1>{loading ? t('button.sending') : t('button.send')}</h1>
+          <h1>{loading ? i18n.button.sending : i18n.button.send}</h1>
         </button>
       </form>
     </Section>

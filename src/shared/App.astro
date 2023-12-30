@@ -1,0 +1,20 @@
+---
+import Contact from '@/partials/Contact';
+import Header from '@/partials/Header';
+
+import { CompaniesList } from '../partials/CompaniesList';
+import { Hero } from '../partials/Hero';
+import Base from '../templates/Base.astro';
+import { AppConfig } from '../utils/AppConfig';
+
+const { title } = AppConfig;
+const { description } = AppConfig;
+const { currentLocale } = Astro;
+---
+
+<Base head={{ title, description }}>
+  <Header client:only />
+  <Hero currentLocale={currentLocale} client:load />
+  <CompaniesList currentLocale={currentLocale} />
+  <Contact currentLocale={currentLocale} client:load />
+</Base>

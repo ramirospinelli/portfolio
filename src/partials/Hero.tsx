@@ -1,25 +1,19 @@
-import { useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
 import Typewriter from 'typewriter-effect';
 
+import type { I18NProps } from '@/i18n';
+import { getI18N } from '@/i18n';
 import { HeroAvatar } from '@/shared/HeroAvatar';
 import { Section } from '@/shared/Section';
 
-import i18n from '../pages/i18n';
-
-const Hero = () => {
-  const { t } = useTranslation('hero');
-
-  useEffect(() => {
-    i18n.init();
-  }, []);
+const Hero = ({ currentLocale }: I18NProps) => {
+  const i18n = getI18N({ currentLocale });
 
   return (
     <Section>
       <HeroAvatar
         title={
           <div className="flex gap-2">
-            {t('title')}
+            {i18n.hero_title}
             <Typewriter
               options={{
                 strings: ['Ramiro.'],
@@ -34,8 +28,8 @@ const Hero = () => {
         }
         description={
           <>
-            <p>{t('description.part1')}</p>
-            <p>{t('description.part2')}</p>
+            <p>{i18n.description.part1}</p>
+            <p>{i18n.description.part2}</p>
           </>
         }
         avatar={
@@ -52,7 +46,7 @@ const Hero = () => {
               download="Ramiro Spinelli - Resume"
               className="inline-block">
               <button className="h-8 rounded  bg-sky-500 px-4 font-bold text-white hover:bg-cyan-400">
-                {t('download_button')}
+                {i18n.download_button}
               </button>
             </a>
           </div>
