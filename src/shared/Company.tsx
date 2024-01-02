@@ -18,7 +18,7 @@ const Company = (props: ICompanyProps) => (
     <div className="shrink-0">
       <a href={props.link}>
         <img
-          className="mb-4 w-36 hover:translate-y-1"
+          className="mb-4 w-36 rounded hover:translate-y-1"
           src={props.img.src}
           alt={props.img.alt}
           loading="lazy"
