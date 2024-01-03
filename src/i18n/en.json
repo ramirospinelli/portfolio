@@ -35,8 +35,9 @@
   },
   "hero_title": "Hi there! I'm ",
   "description": {
-    "part1": "I am a frontend developer with a love for outdoor sports and technology. I have over 5 years of experience helping companies achieve their goals by developing web and mobile applications using the latest JavaScript tools.",
-    "part2": "I enjoy continuous learning and building strong relationships with my colleagues every day."
+    "part1": "I am a ",
+    "part2": " developer with a love for outdoor sports and technology. I have +5 years of experience helping companies achieve their goals by developing web and mobile applications using the latest JavaScript tools.",
+    "part3": "I enjoy continuous learning and building strong relationships with my colleagues every day."
   },
   "download_button": "Download CV"
 }

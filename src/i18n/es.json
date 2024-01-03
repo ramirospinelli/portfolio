@@ -35,8 +35,9 @@
   },
   "hero_title": "Hola! Soy ",
   "description": {
-    "part1": "Soy un desarrollador frontend que le encantan los deportes al aire libre y la tecnología. Tengo más de 5 años de experiencia ayudando a las empresas a alcanzar sus objetivos mediante el desarrollo de aplicaciones web y móviles utilizando las herramientas más recientes de JavaScript.",
-    "part2": "Disfruto de aprender cosas nuevas dia a dia y construir buenas relaciones con mis colegas."
+    "part1": "Soy un desarrollador ",
+    "part2": " que le encantan los deportes al aire libre y la tecnología. Tengo más de 5 años de experiencia ayudando a las empresas a alcanzar sus objetivos mediante el desarrollo de aplicaciones web y móviles utilizando las herramientas más recientes de JavaScript.",
+    "part3": "Disfruto de aprender cosas nuevas dia a dia y construir buenas relaciones con mis colegas."
   },
   "download_button": "Descargar CV"
 }

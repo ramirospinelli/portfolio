@@ -2,6 +2,7 @@ import Typewriter from 'typewriter-effect';
 
 import type { I18NProps } from '@/i18n';
 import { getI18N } from '@/i18n';
+import { GradientText } from '@/shared/Gradient';
 import { HeroAvatar } from '@/shared/HeroAvatar';
 import { Section } from '@/shared/Section';
 
@@ -28,8 +29,10 @@ const Hero = ({ currentLocale }: I18NProps) => {
         }
         description={
           <>
-            <p>{i18n.description.part1}</p>
-            <p>{i18n.description.part2}</p>
+            <span>{i18n.description.part1}</span>
+            <GradientText>Frontend</GradientText>
+            <span>{i18n.description.part2}</span>
+            <span>{i18n.description.part3}</span>
           </>
         }
         avatar={
