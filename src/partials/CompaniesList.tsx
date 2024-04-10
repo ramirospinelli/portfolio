@@ -119,7 +119,7 @@ const CompaniesList = ({ currentLocale }: I18NProps) => {
           role="Academic Assistant"
           description={i18n.globallearning}
           date="SEPT 2020 - OCT 2021"
-          link="https://www.linkedin.com/company/globallearning-ar/"
+          link="https://www.globallearning.com.ar/"
           img={{
             src: '/assets/images/globallearning.png',
             alt: 'Global Learning',

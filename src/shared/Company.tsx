@@ -16,7 +16,7 @@ type ICompanyProps = {
 const Company = (props: ICompanyProps) => (
   <div className="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row">
     <div className="shrink-0">
-      <a href={props.link}>
+      <a href={props.link} target="_blank">
         <img
           className="mb-4 w-36 rounded hover:translate-y-1"
           src={props.img.src}
@@ -28,7 +28,7 @@ const Company = (props: ICompanyProps) => (
 
     <div>
       <div className="flex flex-col items-start gap-y-2 md:flex-col ">
-        <a className="hover:text-cyan-400" href={props.link}>
+        <a className="hover:text-cyan-400" href={props.link} target="_blank">
           <div className="mb-2 text-xl font-semibold">
             {props.name}, {props.role}
           </div>
