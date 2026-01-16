@@ -46,6 +46,6 @@
     "@rollup/rollup-linux-x64-gnu": "4.6.1"
   },
   "volta": {
-    "node": "18.18.0"
+    "node": "20.19.4"
   }
 }
