@@ -20,7 +20,7 @@ const CompaniesList = ({ currentLocale }: I18NProps) => {
       <div className="flex flex-col gap-6">
         <Company
           name="TotalCoin"
-          role="Senior Frontend Developer"
+          role="Tech Lead"
           description={i18n.totalcoin}
           date="DEC 2023 - PRESENT"
           link="https://ar.totalcoin.com/"
@@ -41,7 +41,7 @@ const CompaniesList = ({ currentLocale }: I18NProps) => {
           name="Kodaris"
           role="Senior UX Engineer"
           description={i18n.kodaris}
-          date="OCT 2023 - PRESENT"
+          date="OCT 2023 - DEC 2023"
           link="https://www.kodaris.com/"
           img={{
             src: '/assets/images/kodaris.png',
